@@ -1,34 +1,33 @@
 import "./App.css";
 import NumberInput from "./componets/number_input";
+import Button from "./componets/button";
+import { useState } from "react";
+import Resultado from "./componets/resultado";
 
 function App() {
-  var inputUsuario = 200000;
-
-  // Función que se ejecuta cuando cambia el valor en el input de NumberInput
+  const userValue = 50000;
+  const [value, setValue] = useState(0);
   const cambiarValor = (parametros) => {
-    console.log(parametros.target.value);
+    setValue(parametros.target.value);
+  };
+  const actionClicks = () => {
+    console.log("click");
   };
 
   return (
     <div className="App">
+      <Resultado valorResultado={userValue * 0.004} />
       <NumberInput
         label="Valor a transferir"
-        value={inputUsuario}
+        value={userValue}
         miFuncion={cambiarValor}
       />
-      <p>GMF:{inputUsuario * 0.04}</p>
+
+      <Button buttonText="Copiar" click={actionClicks} />
+
+      <p>Valor GMF:{userValue * 0.004}</p>
     </div>
   );
 }
 
 export default App;
-
-/*
-RETO PRÓXIMA SESIÓN:
-1. Aprender sobre React Hooks: 
-  - Cómo funciona y cómo usar useState: https://react.dev/reference/react/useEffect
-  - Cómo funciona y cómo usar useEffect
-
-2. Aplicar useState y useEffect en este ejercicio.
-
-*/
