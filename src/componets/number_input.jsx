@@ -2,9 +2,11 @@ const NumberInput = ({ label, value, miFuncion }) => {
   return (
     <label>
       <span>{label}</span>
-      <input type="text" onChange={miFuncion} placeholder="Ingresar valor" />
+      <input type="number" onChange={miFuncion} placeholder="Ingresar numero" />
     </label>
   );
 };
 
 export default NumberInput;
+
+

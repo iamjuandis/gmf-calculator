@@ -5,7 +5,7 @@ Project maintained by @Jorge Benavides & @Juan David Perez.
 1. Open the project folder in **Visual Studio Code** (VS).
 2. Open the VS Terminal in split view.
 3. In one of the Terminals, run `git pull` to pull all changes made previously by other teammates. 
-4. In that same Terminal, run `npm start` to run the project locally in [https://localhost:3000 ↗](https://localhost:3000).
+4. In that same Terminal, run `npm run dev` to run the project locally in [https://localhost:3000 ↗](https://localhost:3000).
 
 ## Upload changes to the GitHub repository
 1. Enter `git add .` to add all changes in the commit.
@@ -23,7 +23,7 @@ Proyecto gestionado por @Jorge Benavides y @Juan David Perez.
 1. Abrir la carpeta del proyecto en **Visual Studio Code** (VS).
 2. Abre la Terminal de VS en la vista dividida.
 3. En una de las Terminales, ingresa el comando `git pull` para descargar todos los cambios hechos por otros miembros del equipo. 
-4. En esa misma Terminal, ingresa el comando `npm start` para ejecutar el proyecto localmente en la ruta [https://localhost:3000 ↗](https://localhost:3000).
+4. En esa misma Terminal, ingresa el comando `npm run dev` para ejecutar el proyecto localmente en la ruta [https://localhost:3000 ↗](https://localhost:3000).
 
 ## Subir cambios al Repositorio de GitHub
 1. Ingresa el comando `git add .` para agregar todos los cambios al commit.
