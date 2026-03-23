@@ -1,6 +1,11 @@
 import Button from "./button";
 
-const Resultado = ({ valorResultado, label }) => {
+type ResultadoProps = {
+  valorResultado: number | string;
+  label: string;
+};
+
+const Resultado = ({ valorResultado, label }: ResultadoProps) => {
   return (
     <div>
       <Button buttonText="Copiar" />
@@ -13,3 +18,4 @@ const Resultado = ({ valorResultado, label }) => {
 };
 
 export default Resultado;
+

@@ -93,7 +93,7 @@ body {
 .main-input:focus-visible {
   outline: none;
   background: rgba(106, 143, 222, 0.07);
-  box-shadow: 0 0 0 2px rgba(106, 143, 222, 0.35);
+  box-shadow: none;
 }
 
 .cases-title {
@@ -133,6 +133,11 @@ body {
   border-radius: 8px;
   font-weight: 600;
   color: #1e3a5f;
+}
+
+.value-pill.value-pill--green {
+  background: rgba(11, 110, 79, 0.22) !important;
+  color: #0b6e4f !important;
 }
 
 .result-collapsed {
